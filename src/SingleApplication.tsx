@@ -5,33 +5,33 @@ const SingleApplication = ({ application }) => {
   return (
     <div className={styles.SingleApplication}>
       <div className={styles.cell}>
-        <sub>Company</sub>
+        <sub className={styles.columnHeading}>Company</sub>
         <span className={styles.columnText}>{application.company}</span>
       </div>
       <div className={styles.cell}>
-        <sub>Name</sub>
+        <sub className={styles.columnHeading}>Name</sub>
         <span className={styles.columnText}>
           {application.first_name} {application.last_name}
         </span>
       </div>
       <div className={styles.cell}>
-        <sub>Email</sub>
+        <sub className={styles.columnHeading}>Email</sub>
         <span className={styles.email}>{application.email}</span>
       </div>
       <div className={styles.cell}>
-        <sub>Loan Amount</sub>
+        <sub className={styles.columnHeading}>Loan Amount</sub>
         <span className={styles.columnText}>
           {formatLoanAmount(application.loan_amount)}
         </span>
       </div>
       <div className={styles.cell}>
-        <sub>Application Date</sub>
+        <sub className={styles.columnHeading}>Application Date</sub>
         <span className={styles.columnText}>
           {formatDate(application.date_created)}
         </span>
       </div>
       <div className={styles.cell}>
-        <sub>Expiry date</sub>
+        <sub className={styles.columnHeading}>Expiry date</sub>
         <span className={styles.columnText}>
           {formatDate(application.expiry_date)}
         </span>
