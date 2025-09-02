@@ -42,9 +42,15 @@ const Applications = () => {
         <SingleApplication key={app.id || idx} application={app} />
       ))}
       {hasNextPage && (
-        <Button onClick={handleLoadMore} disabled={loading} className="">
-          {loading ? "Loading..." : "Load More"}
-        </Button>
+        <div className={styles.loadMoreWrapper}>
+          <Button
+            onClick={handleLoadMore}
+            disabled={loading}
+            className={styles.loadMoreBtn}
+          >
+            {loading ? "Loading..." : "Load More"}
+          </Button>
+        </div>
       )}
     </div>
   );

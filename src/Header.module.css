@@ -5,8 +5,13 @@
 }
 
 .Header h1 {
-  color: #143b6b;
-  font-weight: 800;
+  font-family: "Aesop", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #0c2340;
 }
 
 .logo path {

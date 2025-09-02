@@ -14,7 +14,7 @@ const SingleApplication = ({ application }) => {
       </div>
       <div className={styles.cell}>
         <sub>Email</sub>
-        {application.email}
+        <span className={styles.email}>{application.email}</span>
       </div>
       <div className={styles.cell}>
         <sub>Loan Amount</sub>

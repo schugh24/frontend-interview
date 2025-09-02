@@ -3,3 +3,25 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.loadMoreWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.loadMoreBtn {
+  width: 200px;
+  height: 39px;
+  border-radius: 8px;
+  opacity: 1;
+  padding: 8px 24px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
